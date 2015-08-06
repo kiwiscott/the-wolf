@@ -1,7 +1,7 @@
 {
-  "name": "wolf",
-  "version": "1.0.0",
-  "description": "Form Builder",
+  "name": "the-wolf",
+  "version": "0.0.1",
+  "description": "Form Builder Example",
   "main": "app.js",
   "scripts": {
     "test": "mocha --require should --reporter spec --ui bdd --recursive",
