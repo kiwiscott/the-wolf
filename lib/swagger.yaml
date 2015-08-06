@@ -1,0 +1,230 @@
+swagger: '2.0'
+info:
+  version: '0.0.1'
+  title: Wolf Interactor Templifier
+  description: A conduit service between a known front-end api and backend services
+  contact:
+    name: A Development Team
+    email: foo@example.com
+    url: http://confluence.com
+basePath: /api
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /action/{id}:
+    get:
+      description: Returns a single action form description
+      x-swagger-router-controller: action
+      operationId : actionById
+      produces:
+       - application/json
+      parameters:
+      - name: id
+        in: path
+        description: ID of action
+        required: true
+        type: string
+      responses:
+        '200':
+          description: ok
+          schema:
+            $ref: '#/definitions/action'
+        '404':
+          description: Not found
+          schema:
+            $ref: '#/definitions/errorModel'
+    post:
+      description: submits a request to process the action for processing
+      x-swagger-router-controller: action
+      operationId: submitAction
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+      - name: body
+        in: body
+        description: action to submit
+        required: true
+        schema:
+          $ref: '#/definitions/action'
+      - name: id
+        in: path
+        description: ID of action
+        required: true
+        type: string
+      responses:
+        200:
+          description: ok
+        404:
+          description: not found
+          schema:
+            $ref: '#/definitions/errorModel'
+        400:
+          description: invalid request / malformed / failed validation
+          schema:
+            $ref: '#/definitions/errorModel'
+  /admin/action/{id}:
+    get:
+      description: Returns a single action form description
+      x-swagger-router-controller: admin
+      operationId : formById
+      produces:
+       - application/json
+      parameters:
+      - name: id
+        in: path
+        description: ID of action
+        required: true
+        type: string
+      - name: body
+        in: body
+        description: action to submit
+        required: true
+        schema:
+          $ref: '#/definitions/action'
+      responses:
+        200:
+          description: an action to be completed
+          schema:
+            $ref: '#/definitions/action'
+        404:
+          description: not found
+          schema:
+            $ref: '#/definitions/errorModel'
+    put:
+      description: updates an existing action
+      x-swagger-router-controller: admin
+      operationId: updateAction
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+      - name: id
+        in: path
+        description: ID of action
+        required: true
+        type: string
+      - name: body
+        in: body
+        description: action to submit
+        required: true
+        schema:
+          $ref: '#/definitions/action'
+      responses:
+        '200':
+          description: ok
+        '403':
+          description: forbidden - users has no access to this action
+        '404':
+          description: form not found
+          schema:
+            $ref: '#/definitions/errorModel'
+
+  /admin/action/:
+    post:
+      description: create a new existing action
+      x-swagger-router-controller: action
+      operationId: createAction
+      parameters:
+      - name: user
+        in: body
+        description: user to add to the system
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        '200':
+          description: action created
+          schema:
+            $ref: '#/definitions/newAction'
+        '403':
+          description: forbidden - users has no access to this action
+        '404':
+          description: form not found
+          schema:
+            $ref: '#/definitions/errorModel'
+definitions:
+  action:
+    required: 
+      - version
+      - href
+      - template
+    properties:
+      version:
+        type: string
+      href:
+        type: string
+      template:
+        $ref: '#/definitions/template'
+  newAction:
+    required:
+      - id
+    properties:
+      id: 
+        type: string
+  errorModel:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+  actionError:
+    required:
+      - message
+    properties:
+      name:
+        type: string
+      message:
+        type: string
+  template:
+    properties:
+      id:
+        type: string
+      description:
+        type: string
+      href:
+        type: string
+      errors:
+        type: array
+        items:
+          $ref: '#/definitions/actionError'
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/field'
+  field:
+    properties:
+      prompt:
+       type: string
+      name:
+       type: string
+      value:
+       type: string
+      hint:
+       type: string
+      type:
+       type: string
+      pattern:
+       type: string
+      required-when:
+       type: string
+      visible-when:
+       type: string
+      options:
+        type: array
+        items:
+          type: string
+
+

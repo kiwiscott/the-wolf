@@ -1,0 +1,24 @@
+{
+  "name": "wolf",
+  "version": "1.0.0",
+  "description": "Form Builder",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --require should --reporter spec --ui bdd --recursive",
+    "test-debug": "mocha --debug-brk --require should --reporter spec --ui bdd --recursive"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mssql": "*",
+    "moment": "*",
+    "mustache":"*"
+  },
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+    "supertest": "^1.0.1",
+    "mocha": "*",
+    "should": ">= 0.0.1"
+  }
+}

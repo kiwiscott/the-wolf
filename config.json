@@ -1,0 +1,12 @@
+{
+	"db": {
+	    "user": "RndUser@ebogyxibuv",
+	    "password": "skunkw0rks!",
+	    //server: 'r2035192a023.svr.us.jpmchase.net', 
+	    "server": "ebogyxibuv.database.windows.net",
+	    "database": "SkunkWorks",
+	    "options": {
+	        "encrypt": true // Use this if you're on Windows Azure
+		}
+	}
+}
