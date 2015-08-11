@@ -1,8 +1,7 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
-
+/// <reference path="../../typings/tsd.d.ts"/>
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
+var t = require('../testutil');
 
 describe('Date Type Validation', function () {
   var template = {
@@ -24,7 +23,7 @@ describe('Date Type Validation', function () {
           "requiredWhen": 'always'
         }
       },
-       "gooddatetime":
+      "gooddatetime":
       {
         "value": "2010-01-01T05:06:07",
         "type": "datetime",
@@ -40,20 +39,23 @@ describe('Date Type Validation', function () {
           "requiredWhen": 'always'
         }
       }
-      }
+    }
   };
-  
-  it('should validate good date', function () {
-    validator.validateOne(template.data.gooddate, template).valid.should.equal(true);
-  });
-  it('should not validate bad date', function () {
-    validator.validateOne(template.data.baddate, template).valid.should.equal(false);
+
+  it('should validate good date', function (done) {
+    t.validateField('gooddate', template, true, done);
   });
   
-  it('should validate good datetime', function () {
-    validator.validateOne(template.data.gooddatetime, template).valid.should.equal(true);
+  it('should not validate bad date', function (done) {
+    var errors = ['The field must be mm-dd-yyyy'];
+    t.validateField('baddate', template, false, done, errors);
   });
-  it('should not validate bad datetime', function () {
-    validator.validateOne(template.data.baddatetime, template).valid.should.equal(false);
+
+  it('should validate good datetime', function (done) {
+    t.validateField('gooddatetime', template, true, done);
+  });
+
+  it('should not validate bad datetime', function (done) {
+    t.validateField('baddatetime', template, false, done);
   });
 });

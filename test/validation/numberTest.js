@@ -1,8 +1,8 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
+var t = require('../testutil');
 
 describe('Number Type Validation', function () {
   var template = {
@@ -14,13 +14,13 @@ describe('Number Type Validation', function () {
     }
   };
 
-  it('should validate valid number', function () {
-    validator.validateOne(template.data.middle, template).valid.should.equal(true);
+  it('should validate valid number', function (done) {
+    t.validateField('middle', template, true, done);
   });
-  it('should not validate less than', function () {
-    validator.validateOne(template.data.lessthan, template).valid.should.equal(false);
+  it('should not validate less than', function (done) {
+    t.validateField('lessthan', template, false, done);
   });
-  it('should not validate more than', function () {
-    validator.validateOne(template.data.lessthan, template).valid.should.equal(false);
+  it('should not validate more than', function (done) {
+    t.validateField('morethan', template, false, done);
   });
 });

@@ -1,8 +1,7 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
-
+/// <reference path="../../typings/tsd.d.ts"/>
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
+var t = require('../testutil');
 
 describe('Regex String Validation', function () {
   var template = {
@@ -59,24 +58,22 @@ describe('Regex String Validation', function () {
     }
   };
   
-  it('should not allow not required but invalid', function () {
-    validator.validateOne(template.data.notrequiredinvalid, template).valid.should.equal(false);
+  it('should not allow not required but invalid', function (done) {
+    t.validateField('notrequiredinvalid', template,false,done);
   });
-  it('should match min length', function () {
-    validator.validateOne(template.data.minLength3, template).valid.should.equal(true);
+  it('should match min length', function (done) {
+    t.validateField('minLength3', template,true,done);
   });
 
-  it('should match min length and no max', function () {
-    validator.validateOne(template.data.minLength3b, template).valid.should.equal(true);
+  it('should match min length and no max', function (done) {
+    t.validateField('minLength3b', template,true,done);
   });
   
-  it('should be valid if the reg ex is meet', function () {
-    validator.validateOne(template.data.email, template)
-      .valid.should.equal(true);
+  it('should be valid if the reg ex is meet', function (done) {
+    t.validateField('email', template,true,done);
   });
 
-  it('should not be valid if the reg ex is not meet', function () {
-    validator.validateOne(template.data.bademail, template)
-      .valid.should.equal(false);
+  it('should not be valid if the reg ex is not meet', function (done) {
+    t.validateField('bademail', template,false,done);
   });
 });

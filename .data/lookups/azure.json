@@ -1,0 +1,908 @@
+{
+	"type": "data",
+	"valueField": "value",
+	"categoryField": "Country",
+	"queryFields": ["Title","Author","Country","Published"],
+	"data": [
+		{
+			"value": "1",
+			"Title": "1984",
+			"Author": "George Orwell",
+			"Country": "England",
+			"Published": "(1903-1950)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "2",
+			"Title": "A Doll's House",
+			"Author": "Henrik Ibsen",
+			"Country": "Norway",
+			"Published": "(1828-1906)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "3",
+			"Title": "A Sentimental Education",
+			"Author": "Gustave Flaubert",
+			"Country": "France",
+			"Published": "(1821-1880)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "4",
+			"Title": "Absalom,Absalom!",
+			"Author": "William Faulkner",
+			"Country": "United States",
+			"Published": "(1897-1962)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "5",
+			"Title": "The Adventures of Huckleberry Finn",
+			"Author": "Mark Twain",
+			"Country": "United States",
+			"Published": "(1835-1910)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "6",
+			"Title": "The Aeneid",
+			"Author": "Virgil",
+			"Country": "Italy",
+			"Published": "(70-19 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "7",
+			"Title": "Anna Karenina",
+			"Author": "Leo Tolstoy",
+			"Country": "Russia",
+			"Published": "(1828-1910)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "8",
+			"Title": "Beloved",
+			"Author": "Toni Morrison",
+			"Country": "United States",
+			"Published": "(b. 1931)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "9",
+			"Title": "Berlin Alexanderplatz",
+			"Author": "Alfred Doblin",
+			"Country": "Germany",
+			"Published": "(1878-1957)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "10",
+			"Title": "Blindness",
+			"Author": "Jose Saramago",
+			"Country": "Portugal",
+			"Published": "(1922-2010)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "11",
+			"Title": "The Book of Disquiet",
+			"Author": "Fernando Pessoa",
+			"Country": "Portugal",
+			"Published": "(1888-1935)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "12",
+			"Title": "The Book of Job",
+			"Author": "God",
+			"Country": "Israel",
+			"Published": "(600-400 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "13",
+			"Title": "The Brothers Karamazov",
+			"Author": "Fyodor M Dostoyevsky",
+			"Country": "Russia",
+			"Published": "(1821-1881)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "14",
+			"Title": "Buddenbrooks",
+			"Author": "Thomas Mann",
+			"Country": "Germany",
+			"Published": "(1875-1955)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "15",
+			"Title": "Canterbury Tales",
+			"Author": "Geoffrey Chaucer",
+			"Country": "England",
+			"Published": "(1340-1400)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "16",
+			"Title": "The Castle",
+			"Author": "Franz Kafka",
+			"Country": "Bohemia",
+			"Published": "(1883-1924)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "17",
+			"Title": "Children of Gebelawi",
+			"Author": "Naguib Mahfouz",
+			"Country": "Egypt",
+			"Published": "(b. 1911)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "18",
+			"Title": "Collected Fictions",
+			"Author": "Jorge Luis Borges",
+			"Country": "Argentina",
+			"Published": "(1899-1986)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "19",
+			"Title": "Complete Poems",
+			"Author": "Giacomo Leopardi",
+			"Country": "Italy",
+			"Published": "(1798-1837)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "20",
+			"Title": "The Complete Stories",
+			"Author": "Franz Kafka",
+			"Country": "Bohemia",
+			"Published": "(1883-1924)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "21",
+			"Title": "The Complete Tales",
+			"Author": "Edgar Allan Poe",
+			"Country": "United States",
+			"Published": "(1809-1849)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "22",
+			"Title": "Confessions of Zeno",
+			"Author": "Italo Svevo",
+			"Country": "Italy",
+			"Published": "(1861-1928)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "23",
+			"Title": "Crime and Punishment",
+			"Author": "Fyodor M Dostoyevsky",
+			"Country": "Russia",
+			"Published": "(1821-1881)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "24",
+			"Title": "Dead Souls",
+			"Author": "Nikolai Gogol",
+			"Country": "Russia",
+			"Published": "(1809-1852)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "25",
+			"Title": "The Death of Ivan Ilyich and Other Stories",
+			"Author": "Leo Tolstoy",
+			"Country": "Russia",
+			"Published": "(1828-1910)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "26",
+			"Title": "Decameron",
+			"Author": "Giovanni Boccaccio",
+			"Country": "Italy",
+			"Published": "(1313-1375)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "27",
+			"Title": "The Devil to Pay in the Backlands",
+			"Author": "Joao Guimaraes Rosa",
+			"Country": "Brazil",
+			"Published": "(1880-1967)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "28",
+			"Title": "Diary of a Madman and Other Stories",
+			"Author": "Lu Xun",
+			"Country": "China",
+			"Published": "(1881-1936)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "29",
+			"Title": "The Divine Comedy",
+			"Author": "Dante Alighieri",
+			"Country": "Italy",
+			"Published": "(1265-1321)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "30",
+			"Title": "Don Quixote",
+			"Author": "Miguel de Cervantes Saavedra",
+			"Country": "Spain",
+			"Published": "(1547-1616)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "31",
+			"Title": "Essays",
+			"Author": "Michel de Montaigne",
+			"Country": "France",
+			"Published": "(1533-1592)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "32",
+			"Title": "Fairy Tales and Stories",
+			"Author": "Hans Christian Andersen",
+			"Country": "Denmark",
+			"Published": "(1805-1875)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "33",
+			"Title": "Faust",
+			"Author": "Johann Wolfgang von Goethe",
+			"Country": "Germany",
+			"Published": "(1749-1832)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "34",
+			"Title": "Gargantua and Pantagruel",
+			"Author": "Francois Rabelais",
+			"Country": "France",
+			"Published": "(1495-1553)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "35",
+			"Title": "Gilgamesh Mesopotamia",
+			"Author": "Unknown",
+			"Country": "Unknown",
+			"Published": "(c 1800 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "36",
+			"Title": "The Golden Notebook",
+			"Author": "Doris Lessing",
+			"Country": "England",
+			"Published": "(b.1919)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "37",
+			"Title": "Great Expectations",
+			"Author": "Charles Dickens",
+			"Country": "England",
+			"Published": "(1812-1870)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "38",
+			"Title": "Gulliver's Travels",
+			"Author": "Jonathan Swift",
+			"Country": "Ireland",
+			"Published": "(1667-1745)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "39",
+			"Title": "Gypsy Ballads",
+			"Author": "Federico Garcia Lorca",
+			"Country": "Spain",
+			"Published": "(1898-1936)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "40",
+			"Title": "Hamlet",
+			"Author": "William Shakespeare",
+			"Country": "England",
+			"Published": "(1564-1616)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "41",
+			"Title": "History",
+			"Author": "Elsa Morante",
+			"Country": "Italy",
+			"Published": "(1918-1985)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "42",
+			"Title": "Hunger",
+			"Author": "Knut Hamsun",
+			"Country": "Norway",
+			"Published": "(1859-1952)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "43",
+			"Title": "The Idiot",
+			"Author": "Fyodor M Dostoyevsky",
+			"Country": "Russia",
+			"Published": "(1821-1881)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "44",
+			"Title": "The Iliad",
+			"Author": "Homer",
+			"Country": "Greece",
+			"Published": "(c 700 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "45",
+			"Title": "Independent People",
+			"Author": "Halldor K Laxness",
+			"Country": "Iceland",
+			"Published": "(1902-1998)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "46",
+			"Title": "Invisible Man",
+			"Author": "Ralph Ellison",
+			"Country": "United States",
+			"Published": "(1914-1994)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "47",
+			"Title": "Jacques the Fatalist and His Master",
+			"Author": "Denis Diderot",
+			"Country": "France",
+			"Published": "(1713-1784)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "48",
+			"Title": "Journey to the End of the Night",
+			"Author": "Louis-Ferdinand Celine",
+			"Country": "France",
+			"Published": "(1894-1961)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "49",
+			"Title": "King Lear",
+			"Author": "William Shakespeare",
+			"Country": "England",
+			"Published": "(1564-1616)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "50",
+			"Title": "Leaves of Grass",
+			"Author": "Walt Whitman",
+			"Country": "United States",
+			"Published": "(1819-1892)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "51",
+			"Title": "The Life and Opinions of Tristram Shandy",
+			"Author": "Laurence Sterne",
+			"Country": "Ireland",
+			"Published": "(1713-1768)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "52",
+			"Title": "Lolita",
+			"Author": "Vladimir Nabokov",
+			"Country": "Russia/United States",
+			"Published": "(1899-1977)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "53",
+			"Title": "Love in the Time of Cholera",
+			"Author": "Gabriel Garcia Marquez",
+			"Country": "Colombia",
+			"Published": "(b. 1928)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "54",
+			"Title": "Madame Bovary",
+			"Author": "Gustave Flaubert",
+			"Country": "France",
+			"Published": "(1821-1880)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "55",
+			"Title": "The Magic Mountain",
+			"Author": "Thomas Mann",
+			"Country": "Germany",
+			"Published": "(1875-1955)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "56",
+			"Title": "Mahabharata",
+			"Author": "Mahabharata",
+			"Country": "India",
+			"Published": "(c 500 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "57",
+			"Title": "The Man Without Qualities",
+			"Author": "Robert Musil",
+			"Country": "Austria",
+			"Published": "(1880-1942)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "58",
+			"Title": "The Mathnawi",
+			"Author": "Jalal ad-din Rumi",
+			"Country": "Afghanistan",
+			"Published": "(1207-1273)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "59",
+			"Title": "Medea",
+			"Author": "Euripides",
+			"Country": "Greece",
+			"Published": "(c 480-406 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "60",
+			"Title": "Memoirs of Hadrian",
+			"Author": "Marguerite Yourcenar",
+			"Country": "France",
+			"Published": "(1903-1987)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "61",
+			"Title": "Metamorphoses",
+			"Author": "Ovid",
+			"Country": "Italy",
+			"Published": "(c 43 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "62",
+			"Title": "Middlemarch",
+			"Author": "George Eliot",
+			"Country": "England",
+			"Published": "(1819-1880)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "63",
+			"Title": "Midnight's Children",
+			"Author": "Salman Rushdie",
+			"Country": "India/Britain",
+			"Published": "(b. 1947)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "64",
+			"Title": "Moby-Dick",
+			"Author": "Herman Melville",
+			"Country": "United States",
+			"Published": "(1819-1891)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "65",
+			"Title": "Mrs. Dalloway",
+			"Author": "Virginia Woolf",
+			"Country": "England",
+			"Published": "(1882-1941)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "66",
+			"Title": "BOOM, Slappen",
+			"Author": "Njaals Saga",
+			"Country": "Iceland",
+			"Published": "(c 1300)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "67",
+			"Title": "Nostromo",
+			"Author": "Joseph Conrad",
+			"Country": "England",
+			"Published": "(1857-1924)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "68",
+			"Title": "The Odyssey",
+			"Author": "Homer",
+			"Country": "Greece",
+			"Published": "(c 700 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "69",
+			"Title": "Oedipus the King",
+			"Author": "Sophocles",
+			"Country": "Greece",
+			"Published": "(496-406 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "70",
+			"Title": "Old Goriot",
+			"Author": "Honore de Balzac",
+			"Country": "France",
+			"Published": "(1799-1850)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "71",
+			"Title": "he Old Man and the Sea",
+			"Author": "Ernest Hemingway",
+			"Country": "United States",
+			"Published": "(1899-1961)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "72",
+			"Title": "One Hundred Years of Solitude",
+			"Author": "Gabriel Garcia Marquez",
+			"Country": "Colombia",
+			"Published": "(b. 1928)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "73",
+			"Title": "The Orchard",
+			"Author": "Sheikh Musharrif ud-din Sadi",
+			"Country": "Iran",
+			"Published": "(c 1200-1292)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "74",
+			"Title": "Othello",
+			"Author": "William Shakespeare",
+			"Country": "England",
+			"Published": "(1564-1616)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "75",
+			"Title": "Pedro Paramo",
+			"Author": "Juan Rulfo Juan Rulfo",
+			"Country": "Mexico",
+			"Published": "(1918-1986)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "76",
+			"Title": "Pippi Longstocking",
+			"Author": "Astrid Lindgren",
+			"Country": "Sweden",
+			"Published": "(1907-2002)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "77",
+			"Title": "Poems",
+			"Author": "Paul Celan",
+			"Country": "Romania/France",
+			"Published": "(1920-1970)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "78",
+			"Title": "The Possessed",
+			"Author": "Fyodor M Dostoyevsky",
+			"Country": "Russia",
+			"Published": "(1821-1881)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "79",
+			"Title": "Pride and Prejudice",
+			"Author": "Jane Austen",
+			"Country": "England",
+			"Published": "(1775-1817)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "80",
+			"Title": "The Ramayana",
+			"Author": "Valmiki",
+			"Country": "India",
+			"Published": "(c 300 BC)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "81",
+			"Title": "The Recognition of Sakuntala",
+			"Author": "Kalidasa",
+			"Country": "India",
+			"Published": "(c. 400)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "82",
+			"Title": "The Red and the Black",
+			"Author": "Stendhal",
+			"Country": "France",
+			"Published": "(1783-1842)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "83",
+			"Title": "Remembrance of Things Past",
+			"Author": "Marcel Proust",
+			"Country": "France",
+			"Published": "(1871-1922)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "84",
+			"Title": "Season of Migration to the North",
+			"Author": "Tayeb Salih",
+			"Country": "Sudan",
+			"Published": "(b. 1929)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "85",
+			"Title": "Selected Stories",
+			"Author": "Anton P Chekhov",
+			"Country": "Russia",
+			"Published": "(1860-1904)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "86",
+			"Title": "Sons and Lovers",
+			"Author": "DH Lawrence",
+			"Country": "England",
+			"Published": "(1885-1930)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "87",
+			"Title": "The Sound and the Fury",
+			"Author": "William Faulkner",
+			"Country": "United States",
+			"Published": "(1897-1962)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "88",
+			"Title": "The Sound of the Mountain",
+			"Author": "Yasunari Kawabata",
+			"Country": "Japan",
+			"Published": "(1899-1972)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "89",
+			"Title": "The Stranger",
+			"Author": "Albert Camus",
+			"Country": "France",
+			"Published": "(1913-1960)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "90",
+			"Title": "The Tale of Genji",
+			"Author": "Shikibu Murasaki",
+			"Country": "Japan",
+			"Published": "(c 1000)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "91",
+			"Title": "Things Fall Apart",
+			"Author": "Chinua Achebe",
+			"Country": "Nigeria",
+			"Published": "(b. 1930)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "92",
+			"Title": "Thousand and One Nights",
+			"Author": "Bradford Roy",
+			"Country": "India/Iran/Iraq/Egypt",
+			"Published": "(700-1500)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "93",
+			"Title": "The Tin Drum",
+			"Author": "Gunter Grass",
+			"Country": "Germany",
+			"Published": "(b.1927)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "94",
+			"Title": "To the Lighthouse",
+			"Author": "Virginia Woolf",
+			"Country": "England",
+			"Published": "(1882-1941)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "95",
+			"Title": "The Trial",
+			"Author": "Franz Kafka",
+			"Country": "Bohemia",
+			"Published": "(1883-1924)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "96",
+			"Title": "Trilogy: Molloy,Malone Dies,The Unnamable",
+			"Author": "Samuel Beckett",
+			"Country": "Ireland",
+			"Published": "(1906-1989)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "97",
+			"Title": "Ulysses",
+			"Author": "James Joyce",
+			"Country": "Ireland",
+			"Published": "(1882-1941)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "98",
+			"Title": "War and Peace",
+			"Author": "Leo Tolstoy",
+			"Country": "Russia",
+			"Published": "(1828-1910)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "99",
+			"Title": "Wuthering Heights",
+			"Author": "Emily Brontë",
+			"Country": "England",
+			"Published": "(1818-1848)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		},
+		{
+			"value": "100",
+			"Title": "Zorba the Greek",
+			"Author": "Nikos Kazantzakis",
+			"Country": "Greece",
+			"Published": "(1883-1957)",
+			"UploadTime": "2015-08-14T00:00:00.000Z",
+			"TotalViews": 7
+		}
+	]
+}

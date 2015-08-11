@@ -1,6 +1,4 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
-/// <reference path="../../typings/mustache/mustache.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 var should = require('should');
 var mustache = require('mustache');

@@ -1,8 +1,8 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
+var t = require('../testutil');
 
 describe('Required Field Validation Testing', function () {
   var template = {
@@ -33,15 +33,15 @@ describe('Required Field Validation Testing', function () {
     }
   };
 
-  it('should be valid when not required', function () {
-    validator.validateOne(template.data.greeting, template).valid.should.equal(true);
+  it('should be valid when not required', function (done) {
+    t.validateField('greeting', template,true,done);
   });
 
-  it('should be invalid if required by assoication', function () {
-    validator.validateOne(template.data.name, template).valid.should.equal(false);
+  it('should be invalid if required by assoication', function (done) {
+    t.validateField('name', template,false,done);
   });
 
-  it('should be able to validate a complex requiredWhen', function () {
-    validator.validateOne(template.data.crazy, template).valid.should.equal(false);
+  it('should be able to validate a complex requiredWhen', function (done) {
+    t.validateField('crazy', template,false,done);
   });
 });

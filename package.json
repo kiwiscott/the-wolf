@@ -4,19 +4,23 @@
   "description": "Form Builder Example",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --require should --reporter spec --ui bdd --recursive",
-    "test-debug": "mocha --debug-brk --require should --reporter spec --ui bdd --recursive"
+    "test": "set NODE_ENV=test&&node ./node_modules/mocha/bin/mocha --require should --reporter progress --ui bdd --recursive --timeout 7500",
+    "test-debug": "mocha  --debug-brk --require should --reporter spec --ui bdd --recursive"
   },
   "dependencies": {
-    "express": "*",
     "body-parser": "*",
-    "mssql": "*",
+    "express": "*",
+    "log4js": "^0.6.26",
     "moment": "*",
-    "mustache":"*"
+    "morgan": "^1.6.1",
+    "mssql": "*",
+    "mustache": "*",
+    "promise": "^7.0.4",
+    "q": "^1.4.1"
   },
   "author": "",
   "license": "ISC",
-   "devDependencies": {
+  "devDependencies": {
     "supertest": "^1.0.1",
     "mocha": "*",
     "should": ">= 0.0.1"

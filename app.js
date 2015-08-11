@@ -1,20 +1,41 @@
-/// <reference path="typings/node/node.d.ts"/>
-/// <reference path="typings/express/express.d.ts"/>
-/// <reference path="typings/body-parser/body-parser.d.ts"/>
+/// <reference path="typings/tsd.d.ts"/>
 
 var express = require('express');
 var bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 var environment = process.env.NODE_ENV || "DEVELOPMENT";
+var morgan = require('morgan');
+var log4js = require('log4js');
+log4js.configure({
+    appenders: [
+        { type: 'console' },
+        { type: 'file', filename: '.data/log/access.log', category:'-sql'},
+        { type: 'file', filename: '.data/log/sql.log', category: 'sql' }
+    ]
+});
+
+if(environment == 'test'){ 
+    log4js.setGlobalLogLevel(log4js.levels.ERROR);
+}
+
 
 var app = exports.app = express();
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use('/api', require('./routes'));
 
-console.log('About to crank up node');
-console.log('PORT=' + port);
-console.log('NODE_ENV=' + environment);
+// setup the logger
+var applog = log4js.getLogger();
+var httpLog = morgan("dev", {
+    "stream": {
+        write: function (str) { applog.debug(str); }
+    }
+});
+
+app.use(httpLog);
+
+
+
+app.use('/api', require('./lib/routes'));
 
 var server = app.listen(3000, function () {
     var host = server.address().address;

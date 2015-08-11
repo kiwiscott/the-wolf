@@ -1,8 +1,7 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
 
 describe('Large Form Validation', function () {
     var baseTemplate = {
@@ -44,39 +43,49 @@ describe('Large Form Validation', function () {
                     { "value": "Cisco" },
                     { "value": "Other" }
                 ]
+            }, "awesome":
+            {
+                "value": "21",
+                "type": "lookup",
+                "validation": {
+                    "requiredWhen": 'always',
+                    "lookupType": 'azure'
+                }
             }
         }
     };
 
-   
-     it('should validate all fields', function () {
+
+
+    it('should validate all fields', function (done) {
         //We do this so we can change the field values
         var template = JSON.parse(JSON.stringify(baseTemplate));
-        
-        var result = validator.validate(template);
-        
-        result.should.equal(true);
-        should(template).not.have.property('errors');
+
+        validator.validate(template)
+            .then(function (validationResult) {
+                validationResult.valid.should.equal(true);
+                validationResult.errors.length.should.equal(0);
+            }).done(function (s) { done(); });
     });
-     it('should be invalid when one field is not valid', function () {
+    it('should be invalid when one field is not valid', function (done) {
         var template = JSON.parse(JSON.stringify(baseTemplate));
         template.data.email.value = "bademail";
-        
-        var result = validator.validate(template);
-        
-        result.should.equal(false);
-        should(template).have.property('errors');
-        template.errors.length.should.equal(1);
+
+        validator.validate(template)
+            .then(function (validationResult) {
+                validationResult.valid.should.equal(false);
+                validationResult.errors.length.should.equal(1);
+            }).done(function (s) { done(); });
     });
-    it('should be invalid when two fields is not valid', function () {
+    it('should be invalid when two fields is not valid', function (done) {
         var template = JSON.parse(JSON.stringify(baseTemplate));
         template.data.email.value = "bademail";
         template.data.oneOf.value = "crazy";
-        
-        var result = validator.validate(template);
-        
-        result.should.equal(false);
-        should(template).have.property('errors');
-        template.errors.length.should.equal(2);
+
+        validator.validate(template)
+            .then(function (validationResult) {
+                validationResult.valid.should.equal(false);
+                validationResult.errors.length.should.equal(2);
+            }).done(function (s) { done(); });
     });
 });

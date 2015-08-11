@@ -1,8 +1,8 @@
-/// <reference path="../../typings/mocha/mocha.d.ts"/>
-/// <reference path="../../typings/should/should.d.ts"/>
+/// <reference path="../../typings/tsd.d.ts"/>
 
 var should = require('should');
-var validator = require('../../lib/validator.js');
+var validator = require('../../lib/validation/validator');
+var t = require('../testutil');
 
 describe('OneOf Type Testing', function () {
   var template = {
@@ -39,15 +39,15 @@ describe('OneOf Type Testing', function () {
     }
   };
 
-  it('should be valid if the value is in the list', function () {
-    validator.validateOne(template.data.one,template).valid.should.equal(true);
+  it('should be valid if the value is in the list', function (done) {
+    t.validateField('one',template,true,done);
   });
 
-  it('should not be valid if the value is not in the list', function () {
-    validator.validateOne(template.data.two,template).valid.should.equal(false);
+  it('should not be valid if the value is not in the list', function (done) {
+    t.validateField('two',template,false,done);
   });
     
-  it('should not be valid if the value is null', function () {
-    validator.validateOne(template.data.three,template).valid.should.equal(false);
+  it('should not be valid if the value is null', function (done) {
+    t.validateField('three',template,false,done);
   });
 });

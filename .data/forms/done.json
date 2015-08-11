@@ -1,0 +1,13 @@
+{
+    "version" : "1.0",
+    "href" : "http://example.org/friends/",
+    "template" :  {
+    "href" : "http://example.org/friends/jdoe",
+    "name" : "Packaged Phone-Phone Set, Phone Line and Voicemail Add",
+    "description" : "This is how we can use this service etc.... ",
+    "result":{
+      "order-number" : "C123456",
+      "message" : "What ever you want to say here"
+    }
+    }
+}
