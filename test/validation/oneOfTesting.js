@@ -11,43 +11,47 @@ describe('OneOf Type Testing', function () {
       "one":
       {
         "value": "Cisco",
-        "type": "oneOf",       
-        "options": [
-          { "value": "Cisco" },
-          { "value": "Other" }
-        ]
+        "type": "oneOf",
+        "validation": {
+          "options": [
+            { "value": "Cisco" },
+            { "value": "Other" }
+          ]
+        }
       },
       "two": {
         "value": "Apple",
         "type": "oneOf",
-        "options": [
-          { "value": "Cisco" },
-          { "value": "Other" }
-        ]
+        "validation": {
+          "options": [
+            { "value": "Cisco" },
+            { "value": "Other" }
+          ]
+        }
       },
       "three": {
         "value": null,
         "type": "oneOf",
-        "options": [
-          { "value": "Cisco" },
-          { "value": "Other" }
-        ],
         "validation": {
-          "requiredWhen" : "always"
+          "requiredWhen": "always",
+          "options": [
+            { "value": "Cisco" },
+            { "value": "Other" }
+          ]
         }
       }
     }
   };
 
   it('should be valid if the value is in the list', function (done) {
-    t.validateField('one',template,true,done);
+    t.validateField('one', template, true, done);
   });
 
   it('should not be valid if the value is not in the list', function (done) {
-    t.validateField('two',template,false,done);
+    t.validateField('two', template, false, done);
   });
-    
+
   it('should not be valid if the value is null', function (done) {
-    t.validateField('three',template,false,done);
+    t.validateField('three', template, false, done);
   });
 });

@@ -39,11 +39,14 @@ describe('Large Form Validation', function () {
             }, "oneOf": {
                 "value": "Cisco",
                 "type": "oneOf",
-                "options": [
-                    { "value": "Cisco" },
-                    { "value": "Other" }
-                ]
-            }, "awesome":
+                "validation": {
+                    "options": [
+                        { "value": "Cisco" },
+                        { "value": "Other" }
+                    ]
+                }
+            },
+            "awesome":
             {
                 "value": "21",
                 "type": "lookup",

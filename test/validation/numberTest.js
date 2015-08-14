@@ -8,7 +8,15 @@ describe('Number Type Validation', function () {
   var template = {
     "id": "Ce3wr42qwd",
     "data": {
-      "middle": { "value": "50", "type": "number", "validation": { "requiredWhen": 'always', "minimumValue": 0, "maximumValue": 100 } },
+      "middle": {
+        "value": "50",
+        "type": "number",
+        "validation": {
+          "requiredWhen": 'always',
+          "minimumValue": 0,
+          "maximumValue": 100
+        }
+      },
       "lessthan": { "value": "-50", "type": "number", "validation": { "requiredWhen": 'always', "minimumValue": 0, "maximumValue": 100 } },
       "morethan": { "value": "150", "type": "number", "validation": { "requiredWhen": 'always', "minimumValue": 0, "maximumValue": 100 } },
     }
