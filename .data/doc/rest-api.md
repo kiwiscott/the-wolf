@@ -37,6 +37,7 @@ Used for validating a single value from the lookup
 *Example unsuccessful key validation get /api/lookup/azure?v=10000*  
 
         Response : []
+
 *Example successful validation /api/lookup/azure?v=69*
 
         Response : [
