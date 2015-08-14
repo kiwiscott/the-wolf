@@ -78,7 +78,9 @@ Used for validating a single value from the lookup within a specific category
     e.g. [{"value":"Apple","country":"USA" "Description" :"I prefer apple computers"}
 
 *Example unsuccessful key validation get /api/lookup/azure?v=96&c=Ireland*  
+
         Response : []
+
 *Example successful validation /api/lookup/azure?v=69&c=Greece*
 
         Response : [
