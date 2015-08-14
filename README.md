@@ -8,5 +8,5 @@ Its a simple express application with three functions:
 * Provide Lookups for forms
 
 ##API Information
-* [Form Schema](.data/form.md)
-* [rest api calls](.data/rest-api.md)
+* [Form Schema](.data/doc/form.md)
+* [rest api calls](.data/doc/rest-api.md)
