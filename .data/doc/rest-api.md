@@ -35,8 +35,10 @@ Used for validating a single value from the lookup
     e.g. [{"value":"Apple", "Description" :"I prefer apple computers"}
 
 *Example unsuccessful key validation get /api/lookup/azure?v=10000*  
+
         Response : []
 *Example successful validation /api/lookup/azure?v=69*
+
         Response : [
         {
             "value": "69",
@@ -50,6 +52,7 @@ Used for validating a single value from the lookup
         ]
         
 *Example test get /api/lookup/azure?v=99
+
     Response: [
                 {
                     "value": "99",
@@ -76,6 +79,7 @@ Used for validating a single value from the lookup within a specific category
 *Example unsuccessful key validation get /api/lookup/azure?v=96&c=Ireland*  
         Response : []
 *Example successful validation /api/lookup/azure?v=69&c=Greece*
+
         Response : [
         {
             "value": "69",
